@@ -1,0 +1,23 @@
+{
+ "manifest_version": 2,
+ "name": "chrome-capture",
+ "description": "Extensiond e capture",
+ "version": "1.0",
+ "permissions": [
+  "http://*/*", // Toutes les pages HTTP
+  "https://*/*", // Tuutes les pages HTTPS
+  // https://developer.chrome.com/extensions/declare_permissions
+  "tabs", // Permission pour créer des nouveaux onglet
+  "notifications" // Permet d'activer les notifications	
+  ],
+ "browser_action": {
+  "default_icon" : "app/images/chrome-capture.png", // L'icône qui s'affiche en haut à droite de votre navigateur
+  "default_popup": "popup.html" // Le popup qui s'affichera quand vous cliquez sur l'îcone
+ },
+ "icons": {
+  "128" : "app/images/chrome-capture.png"
+ }
+ // "background": { // On rajoute le paramètre "background"
+ //    "scripts": ["monscript.js"]
+ // }
+}

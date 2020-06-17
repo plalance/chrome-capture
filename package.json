@@ -1,0 +1,61 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "chrome-capture",
+  "main": "chrome-capture.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot",
+    "build": "npm run copy-assets",
+    "build-vue": "cross-env NODE_ENV=development webpack",
+    "watch": "webpack-dev-server --hot",
+    "copy-assets": "cpx \"./src/images/**/*\" \"./app/images/\""
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "debounce": "^1.2.0",
+    "es6-promise": "^4.2.6",
+    "jquery": "^3.3.1",
+    "jquery-highlight": "^3.5.0",
+    "jquery.2": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.11",
+    "mini-css-extract-plugin": "^0.5.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "path": "^0.12.7",
+    "sass-loader": "^7.1.0"
+	},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-syntax-decorators": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-typescript": "^7.3.2",
+    "@babel/register": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-for-of": "^6.23.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "promise.prototype.finally": "^3.1.0",
+    "rxjs": "^6.5.2",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "author": "Paul Lalance",
+  "license": "ISC"
+}
